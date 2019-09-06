@@ -1,0 +1,273 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Contact Us -Chick En Go</title>
+</head>
+
+<body>
+  <!-- FB Plug In -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+  <!-- NavBar 1 -->
+  <nav class="navbar navbar-expand-lg fixed-top-sm justify-content-start flex-nowrap bg-red navbar-dark">
+    <div class="container">
+      <a class="navbar-brand my-auto" href="./homepage.html">
+        <img class="d-none d-lg-block position-absolute logo-top" src="./assets/images/logo.png" height="100" />
+        <div class="d-block d-lg-none">
+          <img height="40" src="./assets/images/branding-ceg.jpg" alt="" />
+        </div>
+      </a>
+      <ul class="navbar-nav flex-row mx-auto">
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link px-4" href="./aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link px-4" href="./contactus.html">Contact Us</a>
+        </li>
+      </ul>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- NavBar 2 -->
+  <nav class="navbar navbar-expand-lg bg-light nav-custom navbar-light py-0 py-lg-2 nav-bar-bd mb-2">
+    <div class="container">
+      <div class="navbar-collapse collapse" id="navbar2">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link" href="./aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link" href="./contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item px-0 px-lg-4">
+            <a class="nav-link" href="./products.html">Product Offerings</a>
+          </li>
+          <li class="nav-item  px-0 px-lg-4">
+            <a class="nav-link" href="./promos.html">Promos</a>
+          </li>
+          <li class="nav-item  px-0 px-lg-4">
+            <a class="nav-link" href="./storelocation.html">Store Location</a>
+          </li>
+          <li class="nav-item  px-0 px-lg-4">
+            <a class="nav-link" href="./gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Content -->
+  <div class="container text-light">
+    <div class="msg-content"></div>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="form-group">
+          <label for="fname">
+            First Name <span class="required"> * </span>
+          </label>
+          <input type="text" name="fname" class="form-control" id="fname" placeholder="Your First Name" required="" />
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="form-group">
+          <label for="lname">
+            Last Name <span class="required"> * </span>
+          </label>
+          <input type="text" name="lname" class="form-control" id="lname" placeholder="Your Last Name" required="" />
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="form-group">
+          <label for="gender"> Gender</label>
+          <select name="gender" id="gender" class="form-control gender">
+            <option value="" disabled="" selected=""> Select Gender </option>
+            <option value="female"> Female </option>
+            <option value="male"> Male </option>
+          </select>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="form-group">
+          <label for="age"> Age </label>
+          <input type="text" name="age" class="form-control age-input" id="age" maxlength="2" placeholder="Your Age" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label for="email">
+            Email Address <span class="required"> * </span>
+          </label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="youremail@website.com"
+            required="" />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label for="mobile">
+            Contact Number <span class="required"> * </span>
+          </label>
+          <input type="telephone" name="mobile" class="form-control" id="mobile" placeholder="+(63) 923 1234 567"
+            required="" />
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="form-group">
+          <label for="store"> Chick En Go Branch </label>
+          <select name="store" id="store" class="store form-control">
+            <option value="" disabled="" selected="">
+              Select Chick En Go Store
+            </option>
+            <option value="Central San Ramon">
+              Bataan-Central San Ramon</option>
+            <option value="GL Gen Luna"> GL Gen Luna</option>
+            <option value="West Bajac-Bajac">Olongapo-West Bajac-Bajac</option>
+            <option value="Barraca Camachile">Zambales-Barraca Camachile
+            </option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row top-row">
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="subject"> Subject </label>
+          <select name="subject" id="subject" class="subject form-control">
+            <option value="" disabled="" selected="">
+              Select Subject
+            </option>
+            <option value="Party and Catering Services/Reservation">Party and Catering Services/Reservation</option>
+            <option value="Franchise Inquiry">Franchise Inquiry</option>
+            <option value="Order Confirmation">Order Confirmation</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Guest Feedback / Suggestion">Guest Feedback / Suggestion</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="form-group">
+          <label for="feedback">
+            Feedback <span class="required"> * </span>
+          </label>
+          <textarea rows="5" name="feedback" class="form-control" id="feedback" placeholder="I love Chick En Go!"
+            required="">
+            </textarea>
+          <input type="hidden" value="contact_us_submit" name="contact_us_submit" />
+          <button class="btn btn-red mt-3 mb-3 float-right">
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mb-3">
+        <div class="style">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3856.7522772256907!2d120.28076031484306!3d14.839154889650901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339670e2563d1765%3A0xec7793c36fdad5d6!2sChick%20&#39;En%20Go*21!5e0!3m2!1sfil!2sph!4v1567674516413!5m2!1sfil!2sph"
+            width="100%" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 text-center text-lg-left mb-3 mb-lg-0">
+            <a href="./homepage.html"><span class="fas fa-home fa-2x"></span></a>
+          </div>
+          <div class="col-lg-3 text-center text-lg-left">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h5 class="ft-color">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="./products.html">Product Offerings</a></li>
+                <li><a href="./promos.html">Promos</a></li>
+                <li><a href="./storelocation.html">Store Location</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center text-lg-left">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h5 class="ft-color">Corporate</h5>
+              <ul class="list-unstyled">
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 text-center text-lg-left mb-3 mb-lg-0">
+            <h5>Follow Us</h5>
+            <ul class="social-network social-circle">
+              <li>
+                <a href="https://www.facebook.com/ChickEnGoOfficial/" class="icoFacebook" title="Facebook"><i
+                    class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/officialchickengo/" class="icoIG" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 text-center text-lg-left mb-3 mb-lg-0">
+            <img src="./assets/images/ceg-mascot.png" alt="logo" class="footer-logo img-fluid mb-3" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">
+              &copy; Copyright 2018 - Vercons Inc. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <script>
+    $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,353 @@
+<!DOCTYPE>
+<html>
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    integrity="sha256-zmfNZmXoNWBMemUOo1XUGFfc0ihGGLYdgtJS3KCr/l0=" crossorigin="anonymous" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Order Page -Chick En Go</title>
+</head>
+
+<body>
+  <!-- FB Plug In -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+  <!-- NavBar 1 -->
+  <nav class="navbar navbar-expand-lg fixed-top-sm justify-content-start flex-nowrap bg-red navbar-dark">
+    <div class="container">
+      <a class="navbar-brand my-auto" href="./homepage.html">
+        <img class="d-none d-lg-block position-absolute logo-top" src="./assets/images/logo.png" height="100" />
+        <div class="d-block d-lg-none">
+          <img height="40" src="./assets/images/branding-ceg.jpg" alt="" />
+        </div>
+      </a>
+      <ul class="navbar-nav flex-row mx-auto">
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link px-4" href="./aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item d-none d-lg-block">
+          <a class="nav-link px-4" href="./contactus.html">Contact Us</a>
+        </li>
+      </ul>
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- NavBar 2 -->
+  <nav class="navbar navbar-expand-lg bg-light nav-custom navbar-light py-0 py-lg-2 nav-bar-bd mb-2">
+    <div class="container">
+      <div class="navbar-collapse collapse" id="navbar2">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link" href="./aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link" href="./contactus.html">Contact Us</a>
+          </li>
+          <li class="nav-item px-0 px-lg-4">
+            <a class="nav-link" href="./products.html">Product Offerings</a>
+          </li>
+          <li class="nav-item  px-0 px-lg-4">
+            <a class="nav-link" href="./promos.html">Promos</a>
+          </li>
+          <li class="nav-item  px-0 px-lg-4">
+            <a class="nav-link" href="./storelocation.html">Store Location</a>
+          </li>
+          <li class="nav-item  px-0 px-lg-4">
+            <a class="nav-link" href="./gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container">
+    <form>
+      <!-- cx-details -->
+      <div class="text-light">
+        <h3>Customer Details:</h3>
+      </div>
+      <div class="first-l form-group mb-2">
+        <div class="form-row">
+          <div class="col-6">
+            <input type="text" class="form-control" placeholder="Juan Dela Cruz" />
+          </div>
+          <div class="col-6">
+            <input type="email" class="form-control" placeholder="abc@gmail.com" />
+          </div>
+        </div>
+      </div>
+      <div class="second-l form-group mb-2">
+        <div class="form-row">
+          <div class="col-4">
+            <input type="address" class="form-control" placeholder="123 Brill St." />
+          </div>
+          <div class="col-4">
+            <input type="name" class="form-control" placeholder="Brgy." />
+          </div>
+          <div class="col-4">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="" disabled="" selected="">
+                Select Chick En Go Branch
+              </option>
+              <option>Bataan-Central San Ramon</option>
+              <option>Olongapo-West Bajac-Bajac</option>
+              <option>Zambales-Barraca Camachile</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="third-l form-group mb-2">
+        <div class="form-row">
+          <div class="col-4">
+            <input type="text" class="form-control" placeholder="+639-xx-xxx-xxxx" />
+          </div>
+          <div class="col-4">
+            <input type="text" class="form-control" placeholder="xxx-xxxx" />
+          </div>
+          <div class="col-4">
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option>ASAP</option>
+              <option>10am</option>
+              <option>11am</option>
+              <option>12nn</option>
+              <option>1pm</option>
+              <option>2pm</option>
+              <option>3pm</option>
+              <option>4pm</option>
+              <option>5pm</option>
+              <option>6pm</option>
+              <option>7pm</option>
+              <option>8pm</option>
+              <option>9pm</option>
+              <option>10pm</option>
+              <option>11pm</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <!-- order-details -->
+      <div class="text-light">
+        <h3>Order Details:</h3>
+      </div>
+      <div class="fourth-l container mb-2">
+        <div class="row mb-3">
+          <div class="crd-1 col-lg-4 mt-2 ">
+            <div class="card style">
+              <img src="./assets/images/roasted-chicken.jpg" class="card-img-top" alt="..." />
+              <div class="card-body align-items-center text-center">
+                <div class="card-body mb-5">
+                  <h3 class="card-title">Original Flavor</h3>
+                  <h4>₱299.99</h4>
+                  <p class="card-text">
+                    This crisp and juicy roasted chicken made from the finest
+                    herbs and spices marinated to a secret sauce that touches
+                    every Juan's taste because of it's uniqueness.
+                  </p>
+                  <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                  4.0 stars
+                </div>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="" disabled="" selected="">
+                    Quantity
+                  </option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class=" crd-2 col-lg-4 mt-2  ">
+            <div class="card style">
+              <img src="./assets/images/roasted-chicken1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body align-items-center text-center mb-5">
+                <div class="card-body">
+                  <h3 class="card-title">Hickory Pepper Flavor</h3>
+                  <h4>₱299.99</h4>
+                  <p class="card-text">
+                    So say goodbye to dry,bland chicken and instead enjoy this
+                    tender and deliciously seasoned version of roasted
+                    chicken.
+                  </p>
+                  <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                  4.0 stars
+                </div>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="" disabled="" selected="">
+                    Quantity
+                  </option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class=" crd-3 col-lg-4 mt-2 ">
+            <div class="card style">
+              <img src="./assets/images/roasted-liempo.jpg" class="card-img-top" alt="..." />
+              <div class="card-body align-items-center text-center">
+                <div class="card-body">
+                  <h3 class="card-title">Roasted Liempo</h3>
+                  <h4>₱299.99</h4>
+                  <p class="card-text">
+                    Lechon liempo takes the tastiest portion of the swine—the
+                    belly—and gives it the slow-roasted treatment that results
+                    in succulent meat and crackling skin. It's enough to just
+                    roll up a piece of belly and put it on the spit, with the
+                    extra step of seasoning the inside with garlic paste.
+                  </p>
+                  <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+                  4.0 stars
+                </div>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option value="" disabled="" selected="">
+                    Quantity
+                  </option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- payment-details -->
+      <div class="text-light">
+        <h3>Payment Details:</h3>
+      </div>
+      <div class="fifth-l mb-2">
+        <div class="form-row">
+          <div class="fifth-l-a text-light ml-2 col-lg-3">
+            <h6>Cash</h6>
+            <input type="text" class="form-control" placeholder="Change for xxxx.xx" />
+          </div>
+          <div class="fifth-l-b text-light ml-2 col-lg-2">
+            <h6>Debit/Credit Card</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="" disabled="" selected="">
+                Choose response
+              </option>
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+          </div>
+          <div class="fifth-l-c text-light ml-2 col-lg-2">
+            <h6>Mobile Wallet</h6>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option value="" disabled="" selected="">
+                Choose response
+              </option>
+              <option>Gcash</option>
+              <option>PayMaya</option>
+            </select>
+          </div>
+          <div class="fifth-l-a text-light ml-2 col-lg-4">
+            <h6>Promo Code</h6>
+            <input type="text" class="form-control" placeholder="Type Promo Code" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="sixth-l">
+            <div class="container mb-2">
+              <button class="btn btn-red mt-2 btn-po"
+                onclick="createAlert('','Nice Work!','Here is a bunch of text about some stuff that happened.','success',true,true,'pageMessages');">
+                Process Order
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- footer -->
+
+  <footer class="mainfooter" role="contentinfo">
+    <div class="footer-middle">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 text-center text-lg-left mb-3 mb-lg-0">
+            <a href="./homepage.html"><span class="fas fa-home fa-2x"></span></a>
+          </div>
+          <div class="col-lg-3 text-center text-lg-left">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h5 class="ft-color">Quick Links</h5>
+              <ul class="list-unstyled">
+                <li><a href="./products.html">Product Offerings</a></li>
+                <li><a href="./promos.html">Promos</a></li>
+                <li><a href="./storelocation.html">Store Location</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 text-center text-lg-left">
+            <!--Column1-->
+            <div class="footer-pad">
+              <h5 class="ft-color">Corporate</h5>
+              <ul class="list-unstyled">
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./contactus.html">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 text-center text-lg-left mb-3 mb-lg-0">
+            <h5>Follow Us</h5>
+            <ul class="social-network social-circle">
+              <li>
+                <a href="https://www.facebook.com/ChickEnGoOfficial/" class="icoFacebook" title="Facebook"><i
+                    class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/officialchickengo/" class="icoIG" title="Instagram"><i
+                    class="fab fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 text-center text-lg-left mb-3 mb-lg-0">
+            <img src="./assets/images/ceg-mascot.png" alt="logo" class="footer-logo img-fluid mb-3" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 copy">
+            <p class="text-center">
+              &copy; Copyright 2018 - Vercons Inc. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
